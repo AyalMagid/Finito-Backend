@@ -9,7 +9,7 @@ const app = express();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http);
 
-// CONFIG
+// CONFIG //
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(session({
